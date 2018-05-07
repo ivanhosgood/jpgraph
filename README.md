@@ -1,8 +1,5 @@
 ## JPGRAPH 3.6.7, Community Edition
 
-[![Packagist](https://img.shields.io/packagist/dm/amenadiel/jpgraph.svg)](https://packagist.org/packages/amenadiel/jpgraph)
-[![Code Climate](https://codeclimate.com/github/HuasoFoundries/jpgraph/badges/gpa.svg)](https://codeclimate.com/github/HuasoFoundries/jpgraph)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a7ea0cac1d84bc79545c9f6ff85cd25)](https://www.codacy.com/app/amenadiel/jpgraph?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=HuasoFoundries/jpgraph&amp;utm_campaign=Badge_Grade) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/HuasoFoundries/jpgraph/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/HuasoFoundries/jpgraph/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/HuasoFoundries/jpgraph/badges/build.png?b=master)](https://scrutinizer-ci.com/g/HuasoFoundries/jpgraph/build-status/master) [![StyleCI](https://styleci.io/repos/39590412/shield?branch=master)](https://styleci.io/repos/39590412)
 
 This is an unnoficial refactor of [JpGraph](http://jpgraph.net/) with thefollowing differences:
 - the app was fully refactored adding namespaces, proper folder hierarchy, separating each class in its own file and stripping the use of `require` and `include` to the bare minimum
@@ -27,7 +24,7 @@ composer require amenadiel/jpgraph:^3.6
 
 ## How to use
 
-See the [examples folder](https://github.com/amenadiel/jpgraph/tree/master/Examples) for working samples. 
+See the [examples folder](https://github.com/ivanhosgood/jpgraph/tree/master/Examples) for working samples. 
 
 The examples work the same way you should use this library:
 
@@ -41,15 +38,16 @@ The examples work the same way you should use this library:
    use Amenadiel\JpGraph\Graph;
    use Amenadiel\JpGraph\Plot;
 
+   $graph = new Graph\PieGraph(350, 250);
+   $graph->title->Set("A Simple Pie Plot");
+   $graph->SetBox(true);
+
    $data = array(40, 21, 17, 14, 23);
    $p1 = new Plot\PiePlot($data);
    $p1->ShowBorder();
    $p1->SetColor('black');
    $p1->SetSliceColors(array('#1E90FF', '#2E8B57', '#ADFF2F', '#DC143C', '#BA55D3'));
 
-   $graph = new Graph\PieGraph(350, 250);
-   $graph->title->Set("A Simple Pie Plot");
-   $graph->SetBox(true);
 
    $graph->Add($p1);
    $graph->Stroke();

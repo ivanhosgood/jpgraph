@@ -248,13 +248,6 @@ if (!defined('MBTTF_DIR')) {
     }
 }
 
-//
-// Check minimum PHP version
-//
-function CheckPHPVersion($aMinVersion)
-{
-    return version_compare(PHP_VERSION, $aMinVersion) >= 0;
-}
 
 //
 // Make sure PHP version is high enough
