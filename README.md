@@ -19,7 +19,7 @@ This is an unnoficial refactor of [JpGraph](http://jpgraph.net/) with thefollowi
 Using composer
 
 ```sh
-composer require amenadiel/jpgraph:^3.6
+composer require ivanhosgood/jpgraph
 ```
 
 ## How to use
