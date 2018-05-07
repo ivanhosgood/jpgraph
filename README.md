@@ -1,7 +1,7 @@
 ## JPGRAPH 3.6.7, Community Edition
 
 
-This is an unnoficial refactor of [JpGraph](http://jpgraph.net/) with thefollowing differences:
+This is an unnoficial refactor of [JpGraph](http://jpgraph.net/) with the following differences:
 - the app was fully refactored adding namespaces, proper folder hierarchy, separating each class in its own file and stripping the use of `require` and `include` to the bare minimum
 - dropping support for PHP < 5.4. 
 - it provides full composer compatibility
@@ -13,6 +13,8 @@ This is an unnoficial refactor of [JpGraph](http://jpgraph.net/) with thefollowi
 - Examples pointing to features not present in the free tool were stripped from said folder (e.g. Barcodes)
 - If the chosen font isn't found, it falls back to existing fonts instead of crashing
 - If you try to use antialiasing functions not present in your current GD installation, it disables them instead of crashing
+
+## Forked from https://github.com/HuasoFoundries/jpgraph
 
 ## How to install
 
