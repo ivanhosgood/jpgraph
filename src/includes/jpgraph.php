@@ -249,13 +249,7 @@ if (!defined('MBTTF_DIR')) {
 }
 
 
-//
-// Make sure PHP version is high enough
-//
-if (!CheckPHPVersion(MIN_PHPVERSION)) {
-    Amenadiel\JpGraph\Util\JpGraphError::RaiseL(13, PHP_VERSION, MIN_PHPVERSION);
-    die();
-}
+
 
 //
 // Make GD sanity check
