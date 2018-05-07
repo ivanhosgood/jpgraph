@@ -1,4 +1,5 @@
 ## JPGRAPH 3.6.7, Community Edition
+## Forked from https://github.com/HuasoFoundries/jpgraph
 
 
 This is an unnoficial refactor of [JpGraph](http://jpgraph.net/) with the following differences:
@@ -14,7 +15,6 @@ This is an unnoficial refactor of [JpGraph](http://jpgraph.net/) with the follow
 - If the chosen font isn't found, it falls back to existing fonts instead of crashing
 - If you try to use antialiasing functions not present in your current GD installation, it disables them instead of crashing
 
-## Forked from https://github.com/HuasoFoundries/jpgraph
 
 ## How to install
 
